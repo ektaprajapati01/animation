@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Night</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      body {
+        background-color: rgba(160, 223, 219, 0.689);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+
+      .sun {
+        height: 130px;
+        width: 130px;
+        background-color: yellow;
+        border-radius: 50%;
+        animation: sun 5s linear infinite;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+      }
+
+      @keyframes sun {
+        from {
+          top: 10px;
+          left: 0px;
+        }
+        to {
+          top: 10px;
+          left: 110%;
+        }
+
+        /* 0% {
+          top: 250px;
+          left: 0px;
+        }
+
+        20% {
+          top: 200px;
+          background-color: orange;
+        }
+
+        40% {
+          top: 100px;
+          background-color: orange;
+        }
+
+        60% {
+          top: 100px;
+          background-color: orange;
+        }
+        80% {
+          top: 200px;
+          background-color: rgb(46, 43, 38);
+        }
+        100% {
+          top: 250px;
+          left: 100%;
+          background-color: rgb(46, 43, 38);
+        } */
+      }
+
+      .moon {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border-radius: 50%;
+        animation: moon 5s linear 5s infinite;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        /* display: none; */
+      }
+
+      @keyframes moon {
+        from {
+          top: 10px;
+          left: 0px;
+        }
+        to {
+          top: 10px;
+          left: 110%;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun"></div>
+    <div class="moon"></div>
+  </body>
+</html>

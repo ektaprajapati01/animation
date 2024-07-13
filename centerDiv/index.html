@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background-color: #191825;
+
+      /* 1st trick */
+      /* position: relative; */
+
+
+      /* 2nd trick flex */
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+
+      /* 3rd trick grid */
+      /* display: grid;
+      place-items: center; */
+
+      /* 4th trick grid */
+      /* display: grid;
+      justify-content: center;
+      align-items: center; */
+
+      /* 5th trick flex and margin */
+      display: flex;
+    }
+    .child {
+      width: 400px;
+      height: 400px;
+      background-color: #865dff;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+
+      /* text center */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* 1st trick */
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+
+      /* 5th trick */
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="child">
+    Center Text
+  </div>
+</body>
+</html>
